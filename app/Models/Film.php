@@ -43,9 +43,9 @@ class Film extends Model
         return $this->belongsTo(Rating::class);
     }
 
-    public function languages(): BelongsToMany
+    public function language(): BelongsTo
     {
-        return $this->belongsToMany(Language::class, 'film_languages');
+        return $this->belongsTo(Language::class);
     }
 
     public function genres(): BelongsToMany
@@ -56,5 +56,10 @@ class Film extends Model
     public function actors(): BelongsToMany
     {
         return $this->belongsToMany(Actor::class, 'film_actors');
+    }
+
+    public function tags(): BelongsToMany
+    {
+        return $this->belongsToMany(Tag::class, 'film_tags');
     }
 }

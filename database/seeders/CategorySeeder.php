@@ -17,8 +17,6 @@ class CategorySeeder extends Seeder
             'Series',
             'Cartoons',
             'TV Shows',
-            'Popular',
-            'New',
         ];
 
         foreach ($categories as $category) {
