@@ -3,6 +3,12 @@
     @lang('app.appName')
 @endsection
 @section('content')
+    <div class="row">
+        <div class="">
+            <img src="{{asset('img/2.jpeg')}}" alt="image" class="w-100">
+        </div>
+    </div>
+
     @foreach($tagFilms as $tagFilm)
         <div class="border-top bg-black">
             <div class="container-xl py-4">
