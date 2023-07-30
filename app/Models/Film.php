@@ -48,18 +48,18 @@ class Film extends Model
         return $this->belongsTo(Language::class);
     }
 
-    public function genres(): BelongsToMany
+    public function genre(): BelongsTo
     {
-        return $this->belongsToMany(Genre::class, 'film_genres');
+        return $this->belongsTo(Genre::class);
     }
 
-    public function actors(): BelongsToMany
+    public function actor(): BelongsTo
     {
-        return $this->belongsToMany(Actor::class, 'film_actors');
+        return $this->belongsTo(Actor::class);
     }
 
-    public function tags(): BelongsToMany
+    public function tag(): BelongsTo
     {
-        return $this->belongsToMany(Tag::class, 'film_tags');
+        return $this->belongsTo(Tag::class);
     }
 }

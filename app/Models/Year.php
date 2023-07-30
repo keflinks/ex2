@@ -17,7 +17,7 @@ class Year extends Model
     public $timestamps = false;
 
 
-    public function film(): HasMany
+    public function films(): HasMany
     {
         return $this->hasMany(Film::class);
     }

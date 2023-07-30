@@ -17,8 +17,9 @@ class DatabaseSeeder extends Seeder
             LocationSeeder::class,
             YearSeeder::class,
             RatingSeeder::class,
-            LanguageSeeder::class,
             GenreSeeder::class,
+            TagSeeder::class,
+            LanguageSeeder::class,
         ]);
         \App\Models\Actor::factory(250)->create();
         \App\Models\Film::factory(600)->create();

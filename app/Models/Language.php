@@ -16,6 +16,7 @@ class Language extends Model
 
     public $timestamps = false;
 
+
     public function films(): HasMany
     {
         return $this->hasMany(Film::class);

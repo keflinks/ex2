@@ -27,9 +27,5 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
-    public function watchlists(): BelongsToMany
-    {
-        return $this->belongsToMany(Film::class, 'user_watchlists');
-    }
 }
 
