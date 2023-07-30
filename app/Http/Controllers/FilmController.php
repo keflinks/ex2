@@ -99,4 +99,12 @@ class FilmController extends Controller
                 'f_addtowatchlist' => $f_addtowatchlist,
             ]);
     }
+    public function show($id)
+    {
+        $film = Film::find($id);
+
+
+        return view('film.show',
+            ['film' => $film]);
+    }
 }

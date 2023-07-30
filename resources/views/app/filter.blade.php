@@ -55,14 +55,6 @@
             @endforeach
         </select>
     </div>
-    @auth
-        <div class="mb-3">
-            <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" role="switch" id="addtowatchlist" name="active" value="0" {{ $f_addtowatchlist == 0 ? 'checked' : '' }}>
-                <label class="form-check-label" for="addtowatchlist">Watchlists</label>
-            </div>
-        </div>
-    @endauth
     <div class="row g-3">
         <div class="col">
             <button type="submit" class="btn btn-danger btn-sm w-100">
