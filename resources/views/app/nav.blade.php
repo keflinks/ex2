@@ -11,9 +11,9 @@
                         <i class="bi-search"></i>Search
                     </a>
                 </li>
-                {{--<li class="nav-item dropdown">--}}
-                    {{--<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>--}}
-                    {{--<ul class="dropdown-menu">--}}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+                    <ul class="dropdown-menu">
                         {{--@foreach($categories as $category)--}}
                             {{--<li>--}}
                                 {{--<a class="dropdown-item" href="{{ route('films.index', ['categories' => [$category->id]]) }}">--}}
@@ -24,8 +24,8 @@
                                 {{--</a>--}}
                             {{--</li>--}}
                         {{--@endforeach--}}
-                    {{--</ul>--}}
-                {{--</li>--}}
+                    </ul>
+                </li>
             </ul>
             <ul class="navbar-nav ms-auto">
                 @auth

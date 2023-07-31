@@ -12,7 +12,7 @@ class RatingSeeder extends Seeder
      */
     public function run(): void
     {
-        $ratings = range(1.0, 9.9);
+        $ratings = range(1.0, 10);
 
         foreach ($ratings as $rating) {
             $obj = new Rating();

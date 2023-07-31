@@ -14,28 +14,35 @@ use Illuminate\View\View;
 class Homecontroller extends Controller
 {
     public function index()
-    {
-        $tags = Tag::withCount('films')
-            ->orderBy('id')
-            ->take(9)
-            ->get();
+{
+    $tags = Tag::withCount('films')
+        ->orderBy('id')
+        ->take(9)
+        ->get();
 
-        $tagFilms = [];
-        foreach ($tags as $tag) {
-            $tagFilms[] = [
-                'tag' => $tag,
-                'films' => Film::where('tag_id', $tag->id)
-                    ->with('category', 'location', 'year','genre', 'language','tag','actor')
-                    ->take(12)
-                    ->get(),
-            ];
-        }
-
-        return view('home.index')
-            ->with([
-                'tagFilms' => $tagFilms,
-            ]);
+    $tagFilms = [];
+    foreach ($tags as $tag) {
+        $tagFilms[] = [
+            'tag' => $tag,
+            'films' => Film::where('tag_id', $tag->id)
+                ->with('tag','category', 'location', 'year','genre', 'language','actor')
+                ->take(12)
+                ->get(),
+        ];
     }
+
+
+    return view('home.index')
+        ->with([
+            'tagFilms' => $tagFilms,
+        ]);
+}
+
+
+
+
+
+
     public function locale($locale)
     {
         if ($locale == 'en') {
