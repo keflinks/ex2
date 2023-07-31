@@ -6,7 +6,7 @@
     <div class="">
         <img src="{{asset('img/2.jpeg')}}" alt="image" class="w-100">
     </div>
-    <div class="text-center text-warning h1">
+    <div class="text-center text-warning h2 my-lg-5 my-md-3 my-sm-1">
         The Best Movies Are Here.
     </div>
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
