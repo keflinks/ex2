@@ -11,7 +11,7 @@
                        </div>
                 </div>
                 <div class="mb-1">
-                    <a href="{{ route('films.index', ['location' => $film->category->id]) }}" class="link-dark text-decoration-none">
+                    <a href="{{ route('films.index', ['category' => $film->category->id]) }}" class="link-dark text-decoration-none">
                         {{ $film->category->name }}|
                     </a>
                     <a href="{{ route('films.index', ['location' => $film->location->id]) }}" class="link-dark text-decoration-none">

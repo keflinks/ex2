@@ -3,7 +3,7 @@
         <label for="categories" class="form-label fw-semibold"></label>
         <select class="form-select form-select-sm" name="categories[]" id="categories">
             @foreach($categories as $category)
-                <option value="{{ $category->id }}" {{ $category->id == $f_category ? 'selected' : '' }}>{{ $category->name }}</option>
+                <option value="{{ $category->id }}" {{ $category->id == $f_categories ? 'selected' : '' }}>{{ $category->name }}</option>
             @endforeach
         </select>
     </div>
