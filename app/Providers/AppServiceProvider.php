@@ -27,5 +27,14 @@ class AppServiceProvider extends ServiceProvider
         Model::preventLazyLoading(!$this->app->isProduction());
         Paginator::useBootstrapFive();
 
+        View::composer('app.nav', function ($view) {
+            $categories = Category::withCount('films')
+                ->orderBy('name')
+                ->get();
+
+            $view->with([
+                'categories' => $categories,
+            ]);
+        });
     }
 }
