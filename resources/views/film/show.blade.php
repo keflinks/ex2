@@ -3,12 +3,12 @@
 @section('content')
     <div class=" p-3">
         <div class="row justify-content-center">
-            <div class="mb-1 col-4">
+            <div class="mt-5 col-lg-4 col-md-6 ">
                 <a href="{{ route('films.index', ['film' => $film->image]) }}" class="link-warning h5 fw-semibold text-decoration-none">
                     <img src="{{asset('img/1.jpg')}}" alt="image" class="w-75">
                 </a>
             </div>
-            <div class="col-5">
+            <div class="col-lg-5 col-md-4">
                 <div class="mb-1">
                     <a href="{{ route('films.index', ['film' => $film->name]) }}" class="link-warning h1 fw-semibold text-decoration-none">
                         {{ $film->name }}
@@ -47,6 +47,16 @@
                 <div class="mb-3 h3">
                     <div class="link-light text-decoration-none">
                         Actor:<span class="link-danger ms-4">{{ $film->actor->name }}</span>
+                    </div>
+                </div>
+                <div class="mb-3 h3">
+                    <div class="link-light text-decoration-none">
+                        Decsription:<span class="link-danger ms-4">{{ $film->description }}</span>
+                    </div>
+                </div>
+                <div class="mb-3 h3">
+                    <div class="link-light text-decoration-none">
+                        Updated at:<span class="link-danger ms-4">{{ $film->updated_at}}</span>
                     </div>
                 </div>
                 <div class="d-flex justify-content-between align-items-center">
