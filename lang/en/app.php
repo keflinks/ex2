@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'appName' => 'Belet',
+    'appName' => 'BelentFilm',
     'search' => 'Search',
     'category' => 'Category',
     'categories' => 'Categories',
