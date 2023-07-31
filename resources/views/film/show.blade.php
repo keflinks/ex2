@@ -61,7 +61,7 @@
                 </div>
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="h3 text-danger">
-                        <i class="text-success bi-box-arrow-down"></i> <span class="text-light">{{ $film->downloaded }}</span>
+                        <button type="button" class="btn"><i class="text-success bi-box-arrow-down h3"></i> <span class="text-light h3">{{ $film->downloaded }}</span></button>
                     </div>
                 </div>
                 <div class="mt-5">
