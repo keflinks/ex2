@@ -3,13 +3,13 @@
 @section('content')
     <div class=" p-3">
         <div class="row justify-content-center">
-            <div class="mt-5 col-lg-4 col-md-6 ">
+            <div class="mt-lg-5 col-lg-4 col-md-6 text-center">
                 <a href="{{ route('films.index', ['film' => $film->image]) }}" class="link-warning h5 fw-semibold text-decoration-none">
                     <img src="{{asset('img/1.jpg')}}" alt="image" class="w-75">
                 </a>
             </div>
             <div class="col-lg-5 col-md-4">
-                <div class="mb-1">
+                <div class="mb-3 text-center">
                     <a href="{{ route('films.index', ['film' => $film->name]) }}" class="link-warning h1 fw-semibold text-decoration-none">
                         {{ $film->name }}
                     </a>

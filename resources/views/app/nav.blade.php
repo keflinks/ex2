@@ -5,7 +5,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav me-auto align-items-center">
+            <ul class="navbar-nav me-auto">
                 <li class="nav-item">
                     <a class="nav-link text-warning" href="{{ route('films.index') }}">
                         <i class="bi-search"></i>Search
@@ -13,7 +13,7 @@
                 </li>
                 @foreach($categories as $category)
                     <li class="text-warning">
-                        <a class="dropdown-item ms-3 me-3" href="{{ route('films.index', ['categories' => [$category->id]]) }}">
+                        <a class="dropdown-item ms-lg-3 me-lg-3 mt-2 " href="{{ route('films.index', ['categories' => [$category->id]]) }}">
                             {{ $category->name }}
                         </a>
                     </li>

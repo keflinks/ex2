@@ -1,6 +1,6 @@
 <a href="{{route('films.show', $film->id)}}">
     <div class="border rounded shadow-sm p-3">
-        <div class="d-flex justify-content-between">
+        <div class="d-flex justify-content-center text-center">
             <div>
                 <div class="mb-1 link-warning h5 fw-semibold text-decoration-none">
                     <img src="{{asset('img/1.jpg')}}" alt="image">
@@ -23,8 +23,8 @@
                 </div>
             </div>
         </div>
-        <div class="d-flex justify-content-between align-items-center mt-2 ms-3">
-            <div>
+        <div class="d-flex justify-content-between align-items-center mt-2">
+            <div class="">
                 <button type="button" class="btn btn-{{ $film->addtowatchlist ? 'danger':'success' }} btn-sm btn-active" value="{{ $film->id }}">
                     {!! $film->addtowatchlist ? '<i class="bi-x-lg"></i>':'<i class="bi-plus-square"></i>' !!} Add to watchlist
                 </button>
