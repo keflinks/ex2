@@ -27,7 +27,7 @@ class FilmController extends Controller
             'addtowatchlist' => 'nullable|boolean',
         ]);
 
-        $f_categories = $request->has('categories') ? $request->categories : 0;
+        $f_categories = $request->has('categories') ? $request->categories : [];
         $f_location = $request->has('location') ? $request->location : 0;
         $f_year = $request->has('year') ? $request->year : 0;
         $f_language = $request->has('language') ? $request->language : 0;
