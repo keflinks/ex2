@@ -22,11 +22,11 @@
             <ul class="navbar-nav ms-auto">
                 @auth
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle link-warning" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="bi-person-circle"></i> {{ auth()->user()->name }}
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end"><li>
-                            <a class="dropdown-item" href="{{ route('logout') }}"
+                            <a class="dropdown-item link-warning" href="{{ route('logout') }}"
                                onclick="event.preventDefault(); document.getElementById('logout').submit();">
                                 <i class="bi-box-arrow-right"></i>Log out
                             </a>
